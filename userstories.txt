@@ -1,3 +1,35 @@
 AS A USER, I want to:
-- create a project and be able to change the name of that project
-- create multiple boards 
+- [ ] create a project and be able to change the name of that project
+- [ ] create multiple boards and name/rename each board
+- [ ] create multiple tasks in each board
+- [ ] rearrange task order in the board
+- [ ] move tasks from one board to another
+- [ ] rearrange board order in the project
+
+
+SPRINT 1:
+MVP = task list/todo app
+- create a task by typing in a text box and hitting the enter key or a submit button
+- submission of the first task renders two boards, "to do" and "complete"
+- submitting tasks adds the text to an unordered list "to do" shown on the page
+- display tasks in a list in descending order (oldest on top, newest on bottom)
+- clicking on a task takes displays a modal where you can edit the text or mark the task as complete
+- when a task is marked complete it is removed from the "to do" board and put in the "complete" board
+
+
+SPRINT 2:
+MVP = todo app with drag and drop
+- reorder the tasks vertically within the board by dragging and dropping
+- when a task is dropped in the "complete" board it is automatically marked complete; removing a task from "complete" automatically reverses it's completion status
+
+
+SPRINT 3:
+MVP = kaban board
+- create a board by opening menu and clicking "new board"
+- name and rename boards by clicking "edit board" button that is at the top of each board; opens a modal that lets you rename or delete the board
+- reorder boards horizontally on the page by dragging and dropping
+- when a board is deleted display a modal asking if you want the tasks to be moved to "complete" or want them deleted
+
+
+ICEBOX:
+- create multiple projects, each with multiple boards
