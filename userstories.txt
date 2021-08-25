@@ -1,0 +1,3 @@
+AS A USER, I want to:
+- create a project and be able to change the name of that project
+- create multiple boards 
