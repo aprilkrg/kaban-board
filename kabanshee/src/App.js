@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         Kabanshee
-        <TakeText text="make a list"/>
+        <TakeText text="Create a task"/>
       </header>
     </div>
   );
