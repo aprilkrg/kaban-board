@@ -4,12 +4,10 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 import App from './App';
-import TakeText from './TakeText/TakeText';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <TakeText text="make a list"/>
   </React.StrictMode>,
   document.getElementById('root')
 );
