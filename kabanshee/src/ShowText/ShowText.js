@@ -1,5 +1,4 @@
 import React from "react";
-import TakeText from "../TakeText/TakeText";
 
 class ShowText extends React.Component {
     constructor(props) {
@@ -8,17 +7,16 @@ class ShowText extends React.Component {
             taskItems: []
         };
     }
-    handleTaskSubmit(event) {
-        console.log(this.state, 'state <<');
-        console.log(event, 'event')
-    }
     render() {
         return (
             <header className="ShowText-header">
-                <li>
-                    {this.props.task}
-                    {/* {this.props.submittedText} */}
-                </li>
+                <ul>To Do
+                    {this.props.tasks.map( task => (
+                        <li key={task}>
+                            {task}
+                        </li>
+                    ))}
+                </ul>
             </header>
         )
     }

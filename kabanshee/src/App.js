@@ -1,6 +1,5 @@
-// import './App.css';
+import './App.css';
 import TakeText from "./TakeText/TakeText";
-import ShowText from "./ShowText/ShowText";
 
 function App() {
   return (
@@ -9,7 +8,6 @@ function App() {
         Kabanshee
       </header>
         <TakeText text="Create a task" />
-        {/* <ShowText task="buy cat food"/> */}
     </div>
   );
 }
