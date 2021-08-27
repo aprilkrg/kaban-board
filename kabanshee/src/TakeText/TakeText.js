@@ -1,10 +1,11 @@
 import React from "react";
+import ShowText from "../ShowText/ShowText";
 
 class TakeText extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            submittedText: "",
+            submittedText: [],
             enteredText: ""
         };
         this.handleTextChange = this.handleTextChange.bind(this);
@@ -16,22 +17,23 @@ class TakeText extends React.Component {
     }
     handleTextSubmit(event) {
         event.preventDefault();
-        this.setState({ submittedText: this.state.enteredText });
-        console.log(event.target[0].value, 'find the input')
+        this.state.submittedText.push(this.state.enteredText)
+        this.setState({ submittedText: this.state.submittedText });
+        // console.log(event.target[0].value, 'find the input')
+        /** have to access target at the zero index to properly get the value of the text input; needs to be specified which index because the submit button is also an input tag */
         event.target[0].value = '';
     }
 
     render() {
         return (
-            <div className="TakeText">
-                <header className="TakeText-header">
-                    <form onSubmit={this.handleTextSubmit}>
-                        <input type="text" placeholder={this.props.text} onChange={this.handleTextChange}>
-                        </input>
-                        <input type="submit" value="Submit" ></input>
-                    </form>
-                </header>
-            </div>
+            <header className="TakeText-header">
+                <form onSubmit={this.handleTextSubmit}>
+                    <input type="text" placeholder="Create a task" onChange={this.handleTextChange}>
+                    </input>
+                    <input type="submit" value="Submit" ></input>
+                </form>
+                {/* <ShowText task={this.state.submittedText}/> */}
+            </header>
         );
     }
 
