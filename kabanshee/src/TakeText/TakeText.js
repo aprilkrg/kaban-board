@@ -32,7 +32,7 @@ class TakeText extends React.Component {
                     </input>
                     <input type="submit" value="Submit" ></input>
                 </form>
-                {/* <ShowText task={this.state.submittedText}/> */}
+                <ShowText task={this.state.submittedText}/>
             </header>
         );
     }

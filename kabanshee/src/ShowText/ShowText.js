@@ -15,10 +15,9 @@ class ShowText extends React.Component {
     render() {
         return (
             <header className="ShowText-header">
-                {/* <TakeText /> */}
                 <li>
                     {this.props.task}
-                    {this.props.submittedText}
+                    {/* {this.props.submittedText} */}
                 </li>
             </header>
         )
