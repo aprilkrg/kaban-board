@@ -31,7 +31,11 @@ class TakeText extends React.Component {
                     </input>
                     <input type="submit" value="Submit" ></input>
                 </form>
-                <ShowText tasks={this.state.submittedText}/>
+                <ShowText title="To Do:" tasks={this.state.submittedText}/>
+                {/* <ShowText title="Complete:" tasks={[]} /> */}
+                <ul id="Completed-header"> 
+                Completed
+                </ul>
             </header>
         );
     }

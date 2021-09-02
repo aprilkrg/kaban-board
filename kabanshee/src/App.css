@@ -35,7 +35,7 @@ input {
 }
 
 ul {
-  list-style-type: circle;
+  list-style-type: none;
   margin: 5px;
   padding: 5px;
 }
